@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Flappy beagle.mp3-112d28cc0fd1b6f413860319e349840a.mp3str"
+
+[deps]
+
+source_file="res://sounds/Flappy beagle.mp3"
+dest_files=[ "res://.import/Flappy beagle.mp3-112d28cc0fd1b6f413860319e349840a.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
