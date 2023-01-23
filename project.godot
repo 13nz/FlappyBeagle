@@ -14,6 +14,10 @@ config/name="Flappy Beagle"
 run/main_scene="res://scenes/Menu.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+Global="*res://Global.gd"
+
 [display]
 
 window/size/resizable=false

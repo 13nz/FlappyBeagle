@@ -8,7 +8,8 @@ const GRAVITY = 10
 
 var motion = Vector2()
 var Wall = preload("res://scenes/WallNode.tscn")
-var score = 0
+var Death = preload("res://scenes/Death.tscn")
+# var score = 0
 
 
 # Called when the node enters the scene tree for the first time.
@@ -32,7 +33,7 @@ func _physics_process(delta):
 	
 	motion = move_and_slide(motion, UP)
 	
-	get_parent().get_parent().get_node("CanvasLayer/RichTextLabel").text = str(score)
+	get_parent().get_parent().get_node("CanvasLayer/RichTextLabel").text = str(Global.score)
 
 func wall_reset():
 	var wall_instance = Wall.instance()
@@ -48,9 +49,14 @@ func _on_Resetter_body_entered(body):
 
 func _on_Detect_area_entered(area):
 	if (area.name == "PointArea"):
-		score += 1
+		Global.score += 1
+		if (Global.score > Global.highScore):
+			Global.highScore = Global.score
 
 
 func _on_Detect_body_entered(body):
 	if (body.name == "Walls"):
-		get_tree().reload_current_scene()
+		queue_free()
+		var deathScene = Death.instance()
+		get_parent().get_parent().add_child(deathScene)
+		# get_tree().reload_current_scene()

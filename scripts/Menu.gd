@@ -17,4 +17,6 @@ func _ready():
 
 
 func _on_Play_pressed():
+	Global.score = 0
 	get_tree().change_scene("res://scenes/World.tscn")
+	
