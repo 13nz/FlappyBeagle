@@ -1,5 +1,8 @@
 # Flappy Beagle 🐶
 
+<img width="1018" height="599" alt="image" src="https://github.com/user-attachments/assets/357471a1-72e8-40a0-9036-0c884ee0fb50" />
+
+
 A Flappy Bird clone made in Godot, where you guide a determined beagle through endless obstacles!
 
 ## 🎮 Game Overview
@@ -25,3 +28,6 @@ A Flappy Bird clone made in Godot, where you guide a determined beagle through e
 
 - **Spacebar** – Make the beagle flap!
 - Avoid hitting the pipes or falling off the screen
+
+## Demo
+Try out the game here: https://lenzz.itch.io/flappy-beagle
